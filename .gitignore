@@ -1,1 +1,6 @@
-src/fusion2urdf/**
+src/fusion2urdf/*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
