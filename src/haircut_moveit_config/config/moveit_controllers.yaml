@@ -1,0 +1,13 @@
+controller_manager_ns: Assembly_copy
+controller_list:
+  - name: Assembly_copy/haircut_joint_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - rev1
+      - rev2
+      - rev3
+      - rev4
+      - rev5
+      - rev6

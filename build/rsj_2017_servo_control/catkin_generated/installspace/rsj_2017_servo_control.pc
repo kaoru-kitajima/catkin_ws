@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/install
+
+Name: rsj_2017_servo_control
+Description: Description of rsj_2017_servo_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/install/lib 
+Requires: 

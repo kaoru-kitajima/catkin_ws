@@ -1,0 +1,339 @@
+<?xml version="1.0" ?>
+<robot name="Assembly_copy">
+  <link name="world"/>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.001456 -0.000451 0.033102"/>
+      <mass value="0.586913"/>
+      <inertia ixx="0.00048" ixy="2e-06" ixz="4e-05" iyy="0.000489" iyz="-0.00013" izz="0.000415"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/base_link_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="193 66 66 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/base_link_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link1_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.003466 0.011276 0.014489999999999989"/>
+      <mass value="0.308814"/>
+      <inertia ixx="6.3e-05" ixy="0.0" ixz="-0.000218" iyy="5.6e-05" iyz="0.000217" izz="9.3e-05"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.0753"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link1_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="186 175 175 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.0753"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link1_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link2_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.020541 -0.00017900000000000207 0.05099999999999999"/>
+      <mass value="0.148173"/>
+      <inertia ixx="0.000163" ixy="0.0" ixz="-0.000459" iyy="0.000245" iyz="0.00046" izz="9.6e-05"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.021016 -0.021569 -0.090842"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link2_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="127 191 63 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.021016 -0.021569 -0.090842"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link2_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link3_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.023587 0.0005360000000000018 0.022721999999999992"/>
+      <mass value="0.395617"/>
+      <inertia ixx="0.000329" ixy="-1e-06" ixz="-0.001638" iyy="0.0004" iyz="0.001667" izz="0.000108"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.021017 -0.021337 -0.192842"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link3_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="127 63 191 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.021017 -0.021337 -0.192842"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link3_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link4_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.028051 0.015102999999999998 0.017232000000000025"/>
+      <mass value="0.602911"/>
+      <inertia ixx="0.000296" ixy="-1.1e-05" ixz="-0.005221" iyy="0.000317" iyz="0.005134" izz="0.000176"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.02144 -0.019377 -0.290346"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link4_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="191 191 63 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.02144 -0.019377 -0.290346"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link4_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link5_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.019054 0.019068 0.027435000000000043"/>
+      <mass value="0.302332"/>
+      <inertia ixx="7.2e-05" ixy="-1.2e-05" ixz="-0.004618" iyy="7.8e-05" iyz="0.004606" izz="0.000108"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4.2e-05 -0.040507 -0.348672"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link5_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="63 127 191 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4.2e-05 -0.040507 -0.348672"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link5_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="link6_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.010477 -0.0015929999999999972 0.03273900000000002"/>
+      <mass value="0.099107"/>
+      <inertia ixx="7.3e-05" ixy="-0.0" ixz="-0.001518" iyy="8.3e-05" iyz="0.001519" izz="1.1e-05"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.010937 -0.039339 -0.377173"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link6_1_m-binary.stl"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="191 63 63 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.010937 -0.039339 -0.377173"/>
+      <geometry>
+        <mesh filename="package://haircut/Assembly_copy/m_bin_stl/link6_1_m-binary.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+  <joint name="rev1" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0753"/>
+    <parent link="base_link"/>
+    <child link="link1_1"/>
+    <axis xyz="0.0 -0.0 0.01"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev1_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev1_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="rev2" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.021016 0.021569 0.015542"/>
+    <parent link="link1_1"/>
+    <child link="link2_1"/>
+    <axis xyz="-0.01 3.1e-05 -0.0"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev2_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev2_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="rev3" type="revolute">
+    <origin rpy="0 0 0" xyz="-1e-06 -0.000232 0.102"/>
+    <parent link="link2_1"/>
+    <child link="link3_1"/>
+    <axis xyz="-0.01 3.1e-05 -0.0"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev3_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev3_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="rev4" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.000423 -0.00196 0.097504"/>
+    <parent link="link3_1"/>
+    <child link="link4_1"/>
+    <axis xyz="0.01 -3.1e-05 0.0"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev4_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev4">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev4_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="rev5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.021398 0.02113 0.058326"/>
+    <parent link="link4_1"/>
+    <child link="link5_1"/>
+    <axis xyz="0.0 8e-06 0.01"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev5_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev5_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <joint name="rev6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.010979 -0.001168 0.028501"/>
+    <parent link="link5_1"/>
+    <child link="link6_1"/>
+    <axis xyz="-3.7e-05 -0.01 8e-06"/>
+    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+  </joint>
+  <transmission name="rev6_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rev6">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rev6_actr">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/Assembly_copy</robotNamespace>
+      <controlPeriod>0.001</controlPeriod>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+    <!--plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <jointName>rev1, rev2, rev3, rev4, rev5, rev6</jointName>
+      <updateRate value="50"/>
+    </plugin-->
+  </gazebo>
+  <gazebo reference="base_link">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link1_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link2_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link3_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link4_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link5_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="link6_1">
+    <mu1 value="10.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+</robot>

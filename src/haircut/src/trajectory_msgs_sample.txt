@@ -1,0 +1,23 @@
+rostopic pub --once /follow_joint_trajectory/command trajectory_msgs/JointTrajectory "joint_names:
+- 'rev1'
+- 'rev2'
+- 'rev3'
+- 'rev4'
+- 'rev5'
+- 'rev6'
+points:
+- positions: [0,0,0,0,0,0] 
+  time_from_start: 
+    secs: 0
+- positions: [0.2,0,2,0.2,0.2,0.2,0.2]
+  time_from_start: 
+    secs: 2
+- positions: [0.5,0.5,0.5,0.5,0.5,0.5]
+  time_from_start: 
+    secs: 4
+- positions: [0.2,0.2,0.2,0.2,0.2,0.2]
+  time_from_start: 
+    secs: 6
+- positions: [0,0,0,0,0,0] 
+  time_from_start: 
+    secs: 8"

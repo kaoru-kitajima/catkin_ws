@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <param name="/robot_description" textfile="$(find haircut)/Assembly_copy/Assembly_copy.urdf"/>
+  <node args="-param /robot_description -urdf -model Assembly_copy" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" respawn="false"/>
+  <arg name="load_pos_ctrlrs" default="true"/>
+  <include file="$(find haircut)/launch/Assembly_copy_control.launch">
+    <arg name="load_ctrlrs" value="$(arg load_pos_ctrlrs)"/>
+    <arg name="publish_robot_state" value="true"/>
+  </include>
+</launch>

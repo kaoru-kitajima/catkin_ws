@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/install
+
+Name: realhw_ros_control
+Description: Description of realhw_ros_control
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/install/lib 
+Requires: 

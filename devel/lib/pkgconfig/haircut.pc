@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/devel
+
+Name: haircut
+Description: Description of haircut
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/devel/lib 
+Requires: 

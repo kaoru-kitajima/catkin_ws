@@ -1,0 +1,10 @@
+<launch>
+  <param name="robot_description" textfile="$(find haircut)/Assembly_copy/Assembly_copy.urdf"/>
+  <rosparam file="$(find haircut)/config/manipulator.yaml" command="load"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+  </include>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+    args="-param robot_description -urdf -model Assembly_copy"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" args="manipulator_controller"/>
+</launch>

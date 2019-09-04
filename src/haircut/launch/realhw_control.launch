@@ -1,0 +1,15 @@
+<launch>
+
+  <rosparam file="$(find haircut_moveit_config)/config/hw_controllers.yaml" command="load"/>
+  <node name="realhw_control" pkg="realhw_control" type="realhw_control" 
+        output="screen"/>
+  <node name="controller_spawner" pkg="controller_manager" 
+        type="spawner" respawn="false"
+    output="screen"
+        args="joint_state_controller follow_joint_trajectory"/> 
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" 
+        type="robot_state_publisher" respawn="false" output="screen">
+  </node>
+
+</launch>

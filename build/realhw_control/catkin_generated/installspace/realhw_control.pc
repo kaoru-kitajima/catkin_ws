@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/install
+
+Name: realhw_control
+Description: Description of realhw_control
+Version: 0.0.0
+Cflags: -I/home/kaoru/catkin_ws/install/include
+Libs: -L/home/kaoru/catkin_ws/install/lib 
+Requires: roscpp hardware_interface transmission_interface controller_manager

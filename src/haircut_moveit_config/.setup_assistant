@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: haircut
+    relative_path: Assembly_copy/Assembly_copy.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/Assembly_copy.srdf
+  CONFIG:
+    author_name: kaoru
+    author_email: kaoru.kitta@gmail.com
+    generated_timestamp: 1566267970

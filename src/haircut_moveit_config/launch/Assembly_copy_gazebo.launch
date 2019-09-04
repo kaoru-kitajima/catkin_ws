@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load the Assembly_copy URDF model into the parameter server -->
+  <param name="robot_description" textfile="$(find haircut)/Assembly_copy/Assembly_copy.urdf" />
+  <!-- Start Gazebo with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+  <!-- Spawn a Assembly_copy in Gazebo, taking the description from the
+       parameter server -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model Assembly_copy" output="screen"/>
+  <rosparam file="$(find haircut_moveit_config)/config/controller.yaml" command="load"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+        args="Assembly_copy" output="screen"/>
+  <!-- Convert /joint_states messages published by Gazebo to /tf messages,
+       e.g., for rviz-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+        type="robot_state_publisher" output="screen"/>
+</launch>

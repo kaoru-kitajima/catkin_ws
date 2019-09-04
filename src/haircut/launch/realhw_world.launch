@@ -1,0 +1,10 @@
+<launch>
+  <!--<param name="robot_description"
+     command="$(find xacro)/xacro '$(find trobo_description)/urdf/trobo_sim.xacro'" />-->
+
+  <param name="robot_description" textfile="$(find haircut)/Assembly_copy/hw_Assembly_copy.urdf"/>
+
+  <include file="$(find haircut)/launch/realhw_control.launch" />
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"/>
+</launch>

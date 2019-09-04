@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/devel
+
+Name: sixdofarm
+Description: Description of sixdofarm
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/devel/lib 
+Requires: 

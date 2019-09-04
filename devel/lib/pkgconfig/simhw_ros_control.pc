@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/devel
+
+Name: simhw_ros_control
+Description: Description of simhw_ros_control
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/devel/lib 
+Requires: 

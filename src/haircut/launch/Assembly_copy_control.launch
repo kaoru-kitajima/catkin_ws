@@ -1,0 +1,10 @@
+<launch>
+  <arg name="namespace" default="Assembly_copy"/>
+  <rosparam command="load" file="$(find haircut)/config/Assembly_copy_controller.yaml" ns="$(arg namespace)"/>
+  <arg name="load_ctrlrs" default="true"/>
+  <node args="joint_state_controller rev1_position_controller rev2_position_controller rev3_position_controller rev4_position_controller rev5_position_controller rev6_position_controller" name="controller_spawner" ns="$(arg namespace)" output="screen" pkg="controller_manager" respawn="false" type="spawner" if="$(arg load_ctrlrs)"/>
+  <arg name="publish_robot_state" default="false"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher" if="$(arg publish_robot_state)">
+    <remap from="/joint_states" to="/Assembly_copy/joint_states"/>
+  </node>
+</launch>

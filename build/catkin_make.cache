@@ -1,0 +1,2 @@
+beginner_tutorials:fusion2urdf:haircut:haircut_moveit_config:realhw_control:sixdofarm:sixdofarm_moveit_config
+-DCATKIN_DEVEL_PREFIX=/home/kaoru/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kaoru/catkin_ws/install -G Unix Makefiles

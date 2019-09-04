@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/home/kaoru/catkin_ws/src/beginner_tutorials/include/**",
+        "/home/kaoru/catkin_ws/src/haircut/include/**",
+        "/home/kaoru/catkin_ws/src/rsj_2017_pick_and_placer/include/**",
+        "/home/kaoru/catkin_ws/src/rsj_2017_servo_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

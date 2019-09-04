@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: sixdofarm
+    relative_path: urdf/sixdofarm.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/sixdofarm.srdf
+  CONFIG:
+    author_name: kaoru
+    author_email: yurudorashiru@gmail.com
+    generated_timestamp: 1565769579

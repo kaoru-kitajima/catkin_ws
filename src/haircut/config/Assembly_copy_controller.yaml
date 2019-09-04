@@ -1,0 +1,55 @@
+/Assembly_copy:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+  
+  # Trajectory controllers for moveit-------------------------------------
+  # joint_trajectory_controller:
+  #   type: "position_controllers/JointTrajectoryController"
+  #   joints:
+  #     - rev1
+  #     - rev2
+  #     - rev3
+  #     - rev4
+  #     - rev5
+  #     - rev6
+
+  #   gains:
+  #     rev1: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+  #     rev2: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+  #     rev3: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+  #     rev4: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+  #     rev5: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+  #     rev6: {p: 100.0, i: 0.01, d: 10.0, i_clamp: 1}
+
+  # Position Controllers for command control--------------------------------------
+  rev1_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rev2_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rev3_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rev4_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rev5_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rev6_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rev6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  
+  # Trajectory Controllers -----------------------------------
+  # joint_trajectory_controller:
+  #   type: position_controllers/JointTrajectoryController
+  #   joints: [rev1, rev2, rev3, rev4, rev5, rev6]

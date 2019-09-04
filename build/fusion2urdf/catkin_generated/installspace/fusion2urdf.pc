@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/install
+
+Name: fusion2urdf
+Description: Description of fusion2urdf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/install/lib 
+Requires: 
