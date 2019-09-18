@@ -10,7 +10,25 @@ project(haircut)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  moveit_commander
+  moveit_core
+  moveit_fake_controller_manager
+  moveit_kinematics
   moveit_msgs
+  moveit_planners_chomp
+  moveit_planners_ompl
+  moveit_ros_benchmarks
+  moveit_ros_control_interface
+  moveit_ros_manipulation
+  moveit_ros_move_group
+  moveit_ros_perception
+  moveit_ros_planning
+  moveit_ros_planning_interface
+  moveit_ros_robot_interaction
+  moveit_ros_visualization
+  moveit_ros_warehouse
+  moveit_setup_assistant
+  moveit_simple_controller_manager
   moveit_visual_tools
 )
 
@@ -164,10 +182,10 @@ add_executable(move_group_interface_tutorial src/move_group_interface_tutorial.c
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# install(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+ install(PROGRAMS
+   scripts/move_group_python_interface_tutorial.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ )
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_node

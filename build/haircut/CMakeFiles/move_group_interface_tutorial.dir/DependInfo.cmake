@@ -20,8 +20,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
-  "/usr/include/OGRE"
+  "/opt/ros/melodic/include/ompl-1.4"
   "/usr/include/eigen3"
+  "/usr/include/OGRE"
   )
 
 # Targets to which this target links.

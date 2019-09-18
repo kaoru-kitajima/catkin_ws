@@ -164,7 +164,7 @@
     <parent link="base_link"/>
     <child link="link1_1"/>
     <axis xyz="0.0 -0.0 0.01"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev1_tran">
     <type>transmission_interface/SimpleTransmission</type>
@@ -181,7 +181,7 @@
     <parent link="link1_1"/>
     <child link="link2_1"/>
     <axis xyz="-0.01 3.1e-05 -0.0"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev2_tran">
     <type>transmission_interface/SimpleTransmission</type>
@@ -198,7 +198,7 @@
     <parent link="link2_1"/>
     <child link="link3_1"/>
     <axis xyz="-0.01 3.1e-05 -0.0"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev3_tran">
     <type>transmission_interface/SimpleTransmission</type>
@@ -215,7 +215,7 @@
     <parent link="link3_1"/>
     <child link="link4_1"/>
     <axis xyz="0.01 -3.1e-05 0.0"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev4_tran">
     <type>transmission_interface/SimpleTransmission</type>
@@ -232,7 +232,7 @@
     <parent link="link4_1"/>
     <child link="link5_1"/>
     <axis xyz="0.0 8e-06 0.01"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev5_tran">
     <type>transmission_interface/SimpleTransmission</type>
@@ -249,7 +249,7 @@
     <parent link="link5_1"/>
     <child link="link6_1"/>
     <axis xyz="-3.7e-05 -0.01 8e-06"/>
-    <limit lower="-1.5" upper="1.5" effort="100" velocity="10"/>
+    <limit lower="-2.5" upper="2.5" effort="100" velocity="10"/>
   </joint>
   <transmission name="rev6_tran">
     <type>transmission_interface/SimpleTransmission</type>

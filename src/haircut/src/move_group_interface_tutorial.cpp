@@ -192,8 +192,8 @@ int main(int argc, char** argv)
   // Let's specify a path constraint and a pose goal for our group.
   // First define the path constraint.
   moveit_msgs::OrientationConstraint ocm;
-  ocm.link_name = "panda_link7";
-  ocm.header.frame_id = "panda_link0";
+  ocm.link_name = "link6_1";
+  ocm.header.frame_id = "base_link";
   ocm.orientation.w = 1.0;
   ocm.absolute_x_axis_tolerance = 0.1;
   ocm.absolute_y_axis_tolerance = 0.1;

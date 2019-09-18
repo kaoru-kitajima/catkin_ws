@@ -1,0 +1,8 @@
+prefix=/home/kaoru/catkin_ws/install
+
+Name: haircut_head_traser
+Description: Description of haircut_head_traser
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kaoru/catkin_ws/install/lib 
+Requires: 

@@ -1,2 +1,2 @@
-beginner_tutorials:fusion2urdf:haircut:haircut_moveit_config:realhw_control:sixdofarm:sixdofarm_moveit_config
+beginner_tutorials:freenect_stack/freenect_camera:freenect_stack/freenect_launch:freenect_stack/freenect_stack:fusion2urdf:haircut:haircut_head_traser:haircut_moveit_config:iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer:realhw_control:rgbd_launch:sixdofarm:sixdofarm_moveit_config
 -DCATKIN_DEVEL_PREFIX=/home/kaoru/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kaoru/catkin_ws/install -G Unix Makefiles
